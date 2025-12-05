@@ -1,6 +1,6 @@
 # curso_dev
 
-Seguindo o curso.dev do deschamps
+Seguindo o [curso.dev](https://curso.dev/) do Deschamps
 
 ## Conceitos
 
@@ -38,3 +38,14 @@ pages
 
 ### GIT
 
+- Verionsamentos anteriores: Guardavam apenas os `diffs` das versões
+- GIT: Guarda toda as versões, e caso não haja mudança no arquivo, aponta ele para o arquivo da versão anterior.  
+   Calcula o `diff` sob demanda - por isso é mais rápido.
+
+States dos arquivos do GIT:
+- Untracked
+- Unstaged
+- Staged
+- Commited
+
+Commits são imutávels - quando eu edito, ele cria um novo.
