@@ -49,3 +49,5 @@ States dos arquivos do GIT:
 - Commited
 
 Commits são imutávels - quando eu edito, ele cria um novo.
+
+
