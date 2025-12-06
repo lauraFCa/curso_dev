@@ -59,3 +59,8 @@ git append
 git log --stat
 git log --oneline
 ```
+
+## Projeto
+
+- Criar issues no Github com etapas do projeto - Milestone 0
+- Criar arquivo `.editorconfig` (no VSCode é necessário adicionar a extensão `editorconfig`)
