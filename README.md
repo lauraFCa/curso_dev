@@ -26,7 +26,7 @@ Protocolos podem ser aplicados um sobre o outro:
 FBR - File Based Router: Roteamento baseado em arquivos
 
 Nome do arquivo vira o nome da rota:
-```
+```plaintext
 pages
    |- produtos
    |  |- index.js         ---- site.com/produtos
@@ -51,3 +51,11 @@ States dos arquivos do GIT:
 Commits são imutávels - quando eu edito, ele cria um novo.
 
 
+Alguns comandos para lembrar:
+```git
+git add <filename>
+git commit
+git append
+git log --stat
+git log --oneline
+```
