@@ -1,8 +1,8 @@
-# curso_dev
+# curso.dev
 
 Seguindo o [curso.dev](https://curso.dev/) do Deschamps
 
-## Conceitos
+# Conceitos
 
 Protocolos:
 - **HTTP**: Hypertext Transfer protocol - Protocolo com regras para transferencias de documentos com referências para outros documentos
@@ -21,7 +21,7 @@ Protocolos podem ser aplicados um sobre o outro:
 
 
 
-### Next
+## Next
 
 FBR - File Based Router: Roteamento baseado em arquivos
 
@@ -36,7 +36,7 @@ pages
    |- sobre.js            ---- site.com/sobre
 ```
 
-### GIT
+## GIT
 
 - Verionsamentos anteriores: Guardavam apenas os `diffs` das versões
 - GIT: Guarda toda as versões, e caso não haja mudança no arquivo, aponta ele para o arquivo da versão anterior.  
