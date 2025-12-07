@@ -47,6 +47,9 @@ pages
    |- sobre.js            ---- site.com/sobre
 ```
 
+OBS: Sair do programa de coleta de dados anonimos  
+`npx next telemetry disable`
+
 ## GIT
 
 - Verionsamentos anteriores: Guardavam apenas os `diffs` das versões
