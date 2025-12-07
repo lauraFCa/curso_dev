@@ -119,6 +119,29 @@ Lista de TLS: `.br`, `.com`, `.org`, `.eu`, etc...
 Para agilizar é usado o `TTL` - Time to Live:  
 Define quanto tempo o registro fica em cache, que pode ser aplicado em todos os servidores.
 
+_NIC.br_: Núcleo de Informaçao e Coordenação do `.br`
+
+- Órgão que gerencia os registros `.br`
+- Quem adiciona o domínio ao `TLS .br`
+
+[DNS Propagation Checker](https://www.whatsmydns.net/)  
+(consultar registro específico - `NS`)
+
+### Subdomínios
+
+Os subdomínios são a parte que vem antes do domínio principal na estrutura da URL, como **_subdominio.dominio.com_**.  
+Servem para organizar domínios, como: `blog.seusite.com` e `loja.seusite.com`
+
+Casos de uso de subdomínios:
+
+- **Ambientes de teste** - Você pode usar um subdomínio como um ambiente de teste para experimentar novos recursos sem afetar o site principal (importante restringir o acesso ao subdomínio para que ele não fique acessível publicamente).
+- **Sites multilíngues** - `br.seusite.com` ou `es.website.com`. Dessa forma, você não precisa comprar outro domínio de nível superior (TLD) com código de país.
+- **Versão para celular** - É possível criar um site específico para usuários móveis com um subdomínio, como `m.seusite.com`.
+
+Tecnicamente, `www` é o subdomínio mais comum em um nome de domínio totalmente qualificado.
+
+<br/>
+
 # Projeto
 
 - Criar issues no Github com etapas do projeto - Milestone 0
