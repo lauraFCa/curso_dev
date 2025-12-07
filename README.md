@@ -2,9 +2,18 @@
 
 Seguindo o [curso.dev](https://curso.dev/) do Deschamps
 
+1. [Conceitos](#conceitos)  
+   1.1 [Protocolos](#protocolos)  
+   1.2 [Next](#next)  
+   1.3 [Git](#git)  
+   1.4 [DNS](#dns)
+2. [Projeto](#projeto)
+
+<br/>
+
 # Conceitos
 
-Protocolos:
+## Protocolos:
 
 - **HTTP**: Hypertext Transfer protocol - Protocolo com regras para transferencias de documentos com referências para outros documentos
 - **FTP**: File Transfer Protocol - protocolo para transferencia de arquivos
@@ -63,7 +72,54 @@ git log --stat
 git log --oneline
 ```
 
-## Projeto
+## DNS
+
+Domain Name System: Converte endereço de domínio no endereço de IP
+
+1. _Computador_ --- `tabnews.com.br` ---> _Sevidor DNS_
+2. _Sevidor DNS_ --- `103.88.235.34` ----> _Computador_
+3. _Computador_ --- `103.88.235.34` ----> _Servidor final_
+
+### Como descobrir o IP
+
+_Computador_ envia domínio para o _Provedor de internet_ que possui um _Recursive Resolver_.  
+O recursive resolver é quem descobre o IP.
+
+Root Server são os recursive resolvers
+
+> Atualmente são 13 root servers, em mais de mil instâncias espalhadas pelo mundo
+
+`Fully Qualified Domain Name`: Nome de domínio real completo (termina com um `.`)
+
+```txt
+tabnews.com.br.
+         |  | |
+         |  | root domain
+         |  TLD - Top Level Domain
+         |
+```
+
+Lista de TLS: `.br`, `.com`, `.org`, `.eu`, etc...  
+ Separada duas categorias:
+
+- ccTLDs: Country Code Top-Level Domains `.ca`, `.pt`, `.br`
+- gTLDs: Generic Top Level Domains `.com`, `.org`, `.dev`, `.bradesco`
+
+> Bradesco comprou com a ICANN (Internet Coporation for Assigned Names and Numbers) o TLS `.bradesco`
+
+**Fluxo para encontrar o IP:**
+
+1. Provedor de internet ---`tabnews.com.br`---> Root Server
+2. Root Server -------------`br`---> Provedor de internet
+3. Provedor de internet ---`tabnews.com.br`---> TLD `.br`
+4. TLD _.br_ ------------------`IP do Authoritative Server`-----> Provedor de Internet
+5. Provedor de Internet ---`tabnews.com.br`--> Authoritative Server
+6. Authoritative Server ----`IP Final`---> Provedor de Internet
+
+Para agilizar é usado o `TTL` - Time to Live:  
+Define quanto tempo o registro fica em cache, que pode ser aplicado em todos os servidores.
+
+# Projeto
 
 - Criar issues no Github com etapas do projeto - Milestone 0
 - Criar arquivo `.editorconfig` (no VSCode é necessário adicionar a extensão [editorconfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig))
