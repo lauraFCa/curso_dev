@@ -70,7 +70,7 @@ Alguns comandos para lembrar:
 ```git
 git add <filename>
 git commit
-git append
+git commit --amend
 git log --stat
 git log --oneline
 ```
