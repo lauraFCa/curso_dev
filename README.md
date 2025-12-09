@@ -175,5 +175,21 @@ Exemplos:
 
 # Projeto
 
-- Criar issues no Github com etapas do projeto - Milestone 0
-- Criar arquivo `.editorconfig` (no VSCode é necessário adicionar a extensão [editorconfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig))
+## Criar Milestones
+
+Milestones (e issues) ajudam a visualizar o progresso e motivar a continuidade do desenvolvimento.
+
+## Ideia McDonals
+
+Para evitar a estagnação, e falta de colaboração/ideias.  
+Como fazer: Dê uma sugestão simples ou mesmo improvavél/impossível - isso irá gerar uma discussão
+
+## POC vs MVC
+
+1. PoC: Proof of Concept  
+   Permite compreender o que pode ser feito para provar um conceito, de forma rápida e barata.  
+   _Encontre formas baratas para provar que o que você acredita está certo ..._
+
+- MVP: Minimum Viable Product  
+  Fazer o mínimo possível do produto  
+  _... e então faça o mínimo que der_
