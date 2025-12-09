@@ -1,0 +1,42 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  padding: 3vh 8vw;
+}
+
+main h1,
+main p {
+  text-align: center;
+  margin: 8px;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 8vh 0;
+}
+
+.images img {
+  height: 40vh;
+}
+
+.images img:nth-child(1) {
+  padding-bottom: 100px;
+}
+.images img:nth-child(2) {
+  padding-top: 100px;
+}
+
+.confia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.confia img {
+  height: 30vh;
+}

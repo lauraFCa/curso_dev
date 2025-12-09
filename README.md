@@ -119,6 +119,8 @@ Lista de TLS: `.br`, `.com`, `.org`, `.eu`, etc...
 5. Provedor de Internet ---`tabnews.com.br`--> Authoritative Server
 6. Authoritative Server ----`IP Final`---> Provedor de Internet
 
+\*Authoritative _Name_ Server
+
 Para agilizar é usado o `TTL` - Time to Live:  
 Define quanto tempo o registro fica em cache, que pode ser aplicado em todos os servidores.
 
@@ -142,6 +144,21 @@ Casos de uso de subdomínios:
 - **Versão para celular** - É possível criar um site específico para usuários móveis com um subdomínio, como `m.seusite.com`.
 
 Tecnicamente, `www` é o subdomínio mais comum em um nome de domínio totalmente qualificado.
+
+### dig
+
+Ferramenta especializada para fazer requests em servidores DNS.  
+(útil para )
+
+```bash
+sudo apt update
+sudo apt install dnsutils
+```
+
+```bash
+dig fintab.com.br  # Retorna servidor da Versel mais próximo do usuário:
+dig fintab.com.br TXT +trace  # Retorna o registro TXT com todos os steps/servidores para chegar nele (passo a passo)
+```
 
 <br/>
 
