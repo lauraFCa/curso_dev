@@ -160,6 +160,17 @@ dig fintab.com.br  # Retorna servidor da Versel mais próximo do usuário:
 dig fintab.com.br TXT +trace  # Retorna o registro TXT com todos os steps/servidores para chegar nele (passo a passo)
 ```
 
+## Service Level Agreement - SLA
+
+Tempo que o serviço vai estar no ar.
+
+Importante consultar as páginas de status das plataformas.  
+Exemplos:
+
+- Vercel: https://www.vercel-status.com/
+- AWS: https://health.aws.amazon.com/health/status
+- GitHub: https://www.githubstatus.com/
+
 <br/>
 
 # Projeto
