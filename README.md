@@ -173,6 +173,15 @@ Exemplos:
 
 <br/>
 
+## API - Application Programming Interface
+
+Tende a mudar menos que uma interface web
+Pode ter *breaking changes* ou *non breaking changes*.
+- *Breaking changes* são aquelas que não mantém compatibilidade com a versão anterior (*backward compatibility*)
+- *Non breaking changes* mantém a compatibilidade
+
+
+
 # Projeto
 
 ## Criar Milestones
