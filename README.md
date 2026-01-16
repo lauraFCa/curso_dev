@@ -100,6 +100,7 @@ tabnews.com.br.
          |  | root domain
          |  TLD - Top Level Domain
          |
+         TLS
 ```
 
 Lista de TLS: `.br`, `.com`, `.org`, `.eu`, etc...  
@@ -181,6 +182,35 @@ Pode ter *breaking changes* ou *non breaking changes*.
 - *Non breaking changes* mantém a compatibilidade
 
 
+## Docker
+
+Container é uma imagem que está rodando
+
+| Dockerfile | --> | Image | --> | Container |
+
+`Instalada por padrão no ubuntu`
+
+Exemplo de `yaml` para executar um banco Postgres local:
+```yaml
+services: 
+  database:
+    image: 'postgres:16.0-alpine3.18'
+    environment: 
+      POSTGRES_PASSWORD: 'your_password'
+```
+
+Listar containers em execução:
+`docker ps`
+
+Listar todos os containers:
+`docker ps --all`
+
+Conectar ao banco com `psql`:
+`psql --host=localhost --username=postgres --port=5432`
+
+Para sair do `psql`: `\q`
+
+`docker compose --file folder/myfile.yaml up`
 
 # Projeto
 
